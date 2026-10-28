@@ -1,0 +1,73 @@
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 1024px) {
+  .main-content-wrapper {
+    padding-left: 16rem;
+  }
+}
+
+.dashboard-main {
+  flex: 1;
+  padding: 24px;
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  gap: 24px; 
+}
+
+.header-title-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 16px 0;
+}
+
+.header-title-section h1 {
+  font-size: 2.25rem;
+  font-weight: 800;
+  margin: 0 0 8px 0;
+  color: #0f172a;
+}
+
+body.dark .header-title-section h1 {
+  color: #ffffff;
+}
+
+.header-title-section p {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0;
+  color: #334155;
+}
+
+body.dark .header-title-section p {
+  color: #94a3b8;
+}
+
+.grid-3-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+@media (min-width: 1280px) {
+  .grid-3-1 {
+    grid-template-columns: 2fr 1fr;
+  }
+}
